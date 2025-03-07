@@ -39,8 +39,8 @@ A aplicação está organizada de acordo com as seguintes camadas:
 1. **Clonar o repositório**
 
    ```bash
-   git clone https://github.com/usuario/repository.git
-   cd repository
+   git clone https://github.com/samuprojects/forjando-devs-desafio1.git
+   cd forjando-devs-desafio1/cadastro
    ```
 
 2. **Configurar o banco de dados PostgreSQL**
