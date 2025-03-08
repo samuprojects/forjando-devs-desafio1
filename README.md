@@ -45,21 +45,15 @@ A aplicação está organizada de acordo com as seguintes camadas:
 
 2. **Configurar o banco de dados PostgreSQL**
 
-   Certifique-se de que o banco de dados PostgreSQL esteja configurado corretamente e com a tabela `clientes` criada. 
-   O script SQL utilizado para criar o banco e a tabela são:
+   Certifique-se de que o banco de dados PostgreSQL esteja configurado corretamente e com a tabela `clientes` criada.
+   O script SQL utilizado para criar o banco é:
    ```sql
    CREATE DATABASE cadastro_db;
-   CREATE TABLE clientes (
-       id SERIAL PRIMARY KEY,
-       nome VARCHAR(100),
-       data_nascimento DATE,
-       email VARCHAR(100),
-       telefone VARCHAR(15)
-   );
    ```
+   A aplicação utiliza o Flyway para criação automática da tabela cliente e inserts com dados fictícios para popular o banco de dados.
    A conexão pode ser feita usando as credenciais definidas no código (`postgres:admin`), apenas para fins didáticos.
 
-   Os códigos que podem ser utilizados para popular o banco com dados fictícios estão na pasta sql na raiz do projeto.
+   Todos os códigos sql utilizados no projeto possuem uma cópia na raiz do projeto dentro da pasta sql.
 
 3. **Compilar e empacotar a aplicação**
 
